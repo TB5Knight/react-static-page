@@ -1,0 +1,113 @@
+/* Professional styling for content paragraphs */
+.content {
+  margin: 0 auto;
+  padding: 40px;
+  line-height: 1.8;
+  font-family: 'Georgia', 'Times New Roman', serif;
+   background: linear-gradient(135deg, #535353 0%, #0299a9 100%);
+}
+
+.content p {
+  max-width: 850px;
+  font-size: 1.1em;
+  color: #ededed;
+  text-align: center;
+  margin: 0 auto 1.5em auto;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  padding: 20px;
+  border-radius: 6px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+
+/* Professional styling for footer */
+footer {
+ background: linear-gradient(135deg, #535353 0%, #45a520 100%);
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 3px solid #272727;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0 auto;
+  font-size: 1.05em;
+  line-height: 1.8;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+footer strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+/* Image tabs styling */
+.image-tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.image-tab {
+  width: 260px;
+  height: 260px;
+  background: linear-gradient(135deg, #535353 0%, #45a520 100%);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.image-tab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-tab:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px) scale(1.02);
+  border-color: #45a520;
+}
+
+.image-tab:hover::before {
+  opacity: 1;
+}
+
+.image-tab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  z-index: 0;
+  border-radius: 6px;
+}
+
+
+.image-tab:hover img {
+  transform: scale(1.1);
+}
