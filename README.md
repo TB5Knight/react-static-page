@@ -1,3 +1,9 @@
+# Description of project
+For my React static page, I decided to do The Three Little Pigs story. I started by creating a React app, then adding the components 
+folder into the src directory with the required JavaScript files. After that, I set up my pages. Lastly, I placed images under my 
+paragraphs in content.js. I designed my page in a professional style with a linear gradient background. I used four images to relate to 
+my story and help users visualize the content while reading.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
